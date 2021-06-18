@@ -1,9 +1,9 @@
 def make_split_and_reverse_number(number) -> float:
-    '''
+    """
     Разделение числа на целую и дробную часть с переворотом цифр.
 
     Возврат число с типом float.
-    '''
+    """
     part_1, part_2 = str(number).split('.')
     result = '.'.join(
         [
@@ -15,10 +15,10 @@ def make_split_and_reverse_number(number) -> float:
 
 
 def make_reverse_number(number) -> str:
-    '''Переворачивание цифр в числе.
+    """Переворачивание цифр в числе.
 
     Возврат тип string.
-    '''
+    """
     return str(number)[::-1]
 
 
@@ -35,5 +35,3 @@ if __name__ == '__main__':
     print(f'Первое число наоборот: {first_number_reversed}')
     print(f'Второе число наоборот: {second_number_reversed}')
     print(f'Сумма: {sum_of_numbers}')
-
-# TODO применить рекомендации данные ранее
