@@ -1,5 +1,6 @@
 def is_three_equal_digits_in_number(number) -> bool:
     '''Определяет наличия трех равных цифр в 4-ех значном числе.'''
+    # TODO list tuple dict set зарезервированные слова не используем их в именовании переменных
     number_list = list(str(number))
     number_list_len = len(number_list)
     if number_list_len != 4:
@@ -20,3 +21,5 @@ if __name__ == '__main__':
     for year in range(year_start_input, year_end_input + 1):
         if is_three_equal_digits_in_number(year):
             print(year)
+
+# TODO применить рекомендации данные ранее

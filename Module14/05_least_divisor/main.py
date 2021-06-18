@@ -11,6 +11,7 @@ def smallest_divisor_of_number(number):
 
 if __name__ == '__main__':
     number_input = int(input('Введите число: '))
+    # TODO два раза объявили
     number_input = 6
     result = smallest_divisor_of_number(number_input)
     print(f'Наименьший делитель, отличный от единицы: {result}')
