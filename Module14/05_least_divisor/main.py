@@ -13,3 +13,5 @@ if __name__ == '__main__':
     number_input = int(input('Введите число: '))
     result = smallest_divisor_of_number(number_input)
     print(f'Наименьший делитель, отличный от единицы: {result}')
+
+# зачет!

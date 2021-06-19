@@ -35,3 +35,5 @@ if __name__ == '__main__':
     print(f'Первое число наоборот: {first_number_reversed}')
     print(f'Второе число наоборот: {second_number_reversed}')
     print(f'Сумма: {sum_of_numbers}')
+
+# зачет!

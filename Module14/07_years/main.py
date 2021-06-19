@@ -20,3 +20,5 @@ if __name__ == '__main__':
     for year in range(year_start_input, year_end_input + 1):
         if is_three_equal_digits_in_number(year):
             print(year)
+
+# зачет!

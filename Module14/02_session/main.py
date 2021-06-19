@@ -27,3 +27,5 @@ if __name__ == '__main__':
     )
     print("Уравнение прямой, проходящей через эти точки:")
     print(straight_line_equation)
+
+# зачет!

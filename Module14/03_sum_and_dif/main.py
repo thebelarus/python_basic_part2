@@ -17,3 +17,5 @@ if __name__ == '__main__':
     print(f'Сумма цифр: {sum_of_digits}')
     difference_of_results = sum_of_digits - number_of_digits
     print(f'Разность суммы и кол-ва цифр: {difference_of_results}')
+
+# зачет!
