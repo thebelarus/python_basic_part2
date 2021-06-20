@@ -33,3 +33,5 @@ if __name__ == '__main__':
             corect_input_status = True
     new_postion = count_position(containers_l_input, new_container_value)
     print(f'Номер, куда встанет новый контейнер: {new_postion}')
+
+# TODO применить рекомендации данные ранее

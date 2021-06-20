@@ -21,3 +21,5 @@ if __name__ == '__main__':
     filtered_cells_l = filter_cells_l(generated_cells_l)
     result = ' '.join([str(item) for item in filtered_cells_l])
     print(f'Неподходящие значения: {result}')
+
+# TODO применить рекомендации данные ранее

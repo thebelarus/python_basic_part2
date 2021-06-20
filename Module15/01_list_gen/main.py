@@ -1,3 +1,5 @@
+
+# TODO что такое n ? назвать более развернуто
 def generate_odds_numbers(n) -> list:
     if not isinstance(n, int):
         raise ValueError('Требуется целое число!')
@@ -5,6 +7,7 @@ def generate_odds_numbers(n) -> list:
 
 
 def generate_odds_numbers_second_version(n) -> list:
+    # TODO что такое _l
     generated_numbers_l = [x for x in range(n+1)]
     if not isinstance(n, int):
         raise ValueError('Требуется целое число!')
@@ -13,5 +16,8 @@ def generate_odds_numbers_second_version(n) -> list:
 
 if __name__ == '__main__':
     number = int(input('Введите число: '))
+    # TODO стараемся не вызывать функции в принте
     print(generate_odds_numbers(number))
     print(generate_odds_numbers_second_version(number))
+
+

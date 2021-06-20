@@ -24,3 +24,5 @@ if __name__ == '__main__':
     print(f'Старый список видеокарт: {videocards_l_input}')
     videocards_l_input = filter_videocards_l(videocards_l_input)
     print(f'Новый список видеокарт: {videocards_l_input}')
+
+# TODO применить рекомендации данные ранее
