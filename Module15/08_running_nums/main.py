@@ -1,7 +1,7 @@
-def shift_table(table_l, k_value) -> None:
-    for index in range(k_value):
-        table_l = table_l[-1:] + table_l[:-1]
-        print(f'Cдвиг {index+1}: {table_l}')
+def shift_table(table, shift) -> None:
+    for index in range(shift):
+        table = table[-1:] + table[:-1]
+        print(f'Cдвиг {index+1}: {table}')
 
 
 if __name__ == '__main__':
@@ -10,5 +10,3 @@ if __name__ == '__main__':
     print(f'Изначальный список: {n}')
     shift_table(n, k)
     print(f'Сдвинутый список: {n}')
-
-# TODO применить рекомендации данные ранее

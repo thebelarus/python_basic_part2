@@ -1,4 +1,4 @@
-def count_unique_letters(word):
+def count_unique_letters(word) -> int:
     if not isinstance(word, str):
         raise ValueError('Требуется список!')
     unique_letters_counter = 0
@@ -12,6 +12,3 @@ if __name__ == '__main__':
     word_input = input('Введите слово: ')
     unique_letters_count = count_unique_letters(word_input)
     print(f'Кол-во уникальных букв: {unique_letters_count}')
-
-
-# зачет!

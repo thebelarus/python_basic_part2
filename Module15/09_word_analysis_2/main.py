@@ -1,4 +1,4 @@
-def is_palindrome(word):
+def is_palindrome(word) -> bool:
     if not isinstance(word, str):
         raise ValueError('Ошибка! Требуется строка!')
     if word == word[::-1]:
@@ -12,5 +12,3 @@ if __name__ == '__main__':
         print('Слово является палиндромом')
     else:
         print('Слово не является палиндромом')
-
-# зачет!

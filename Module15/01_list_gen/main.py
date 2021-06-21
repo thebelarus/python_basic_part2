@@ -1,23 +1,20 @@
 
-# TODO что такое n ? назвать более развернуто
-def generate_odds_numbers(n) -> list:
-    if not isinstance(n, int):
+def generate_odds_numbers(number) -> list:
+    if not isinstance(number, int):
         raise ValueError('Требуется целое число!')
-    return [x for x in range(n+1) if x % 2 != 0]
+    return [item for item in range(number+1) if item % 2 != 0]
 
 
-def generate_odds_numbers_second_version(n) -> list:
-    # TODO что такое _l
-    generated_numbers_l = [x for x in range(n+1)]
-    if not isinstance(n, int):
+def generate_odds_numbers_second_version(number) -> list:
+    generated_numbers = [item for item in range(number+1)]
+    if not isinstance(number, int):
         raise ValueError('Требуется целое число!')
-    return generated_numbers_l[1::2]
+    return generated_numbers[1::2]
 
 
 if __name__ == '__main__':
-    number = int(input('Введите число: '))
-    # TODO стараемся не вызывать функции в принте
-    print(generate_odds_numbers(number))
-    print(generate_odds_numbers_second_version(number))
-
-
+    number_input = int(input('Введите число: '))
+    generated_numbers = generate_odds_numbers(number_input)
+    print(f'Список нечетных чисел: {generated_numbers}')
+    generated_numbers = generate_odds_numbers_second_version(number_input)
+    print(f'Список нечетных чисел: {generated_numbers}')

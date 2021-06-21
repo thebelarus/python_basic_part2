@@ -1,12 +1,10 @@
-def generate_even_names_l(names_l) -> list:
-    return names_l[::2]
+def generate_even_names(names) -> list:
+    return names[::2]
 
 
 if __name__ == '__main__':
-    names = [
+    name_input = [
         'Артемий', 'Борис', 'Влад', 'Гоша',
         'Дима', 'Евгений', 'Женя', 'Захар'
     ]
-    print(generate_even_names_l(names))
-
-# TODO применить рекомендации данные ранее
+    print(generate_even_names(name_input))
