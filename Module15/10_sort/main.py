@@ -10,3 +10,5 @@ if __name__ == '__main__':
     print(f'Изначальный список: {array_input}')
     array_sort(array_input)
     print(f'Отсортированный список: {array_input}')
+
+# зачет!

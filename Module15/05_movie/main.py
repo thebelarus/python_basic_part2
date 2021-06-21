@@ -15,3 +15,5 @@ if __name__ == '__main__':
             print('Ошибка! Данного фильма нет в списке фильмов!')
     result = ', '.join(favorite_films) if favorite_films else 'пуст'
     print(f'Cписок любимых фильмов: {result}.')
+
+# зачет!

@@ -24,3 +24,5 @@ if __name__ == '__main__':
     print(f'Старый список видеокарт: {videocards_input}')
     videocards_input = filter_videocards(videocards_input)
     print(f'Новый список видеокарт: {videocards_input}')
+
+# зачет!
