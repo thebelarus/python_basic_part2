@@ -7,5 +7,5 @@ if __name__ == '__main__':
         'Артемий', 'Борис', 'Влад', 'Гоша',
         'Дима', 'Евгений', 'Женя', 'Захар'
     ]
-    # TODO не вызываем функцию в функции
-    print(generate_even_names(name_input))
+    result = generate_even_names(name_input)
+    print(result)

@@ -6,11 +6,10 @@ def generate_odds_numbers(number) -> list:
 
 
 def generate_odds_numbers_second_version(number) -> list:
-    # TODO такая переменная уже используется в глобальном скоупе
-    generated_numbers = [item for item in range(number+1)]
+    numbers = [item for item in range(number+1)]
     if not isinstance(number, int):
         raise ValueError('Требуется целое число!')
-    return generated_numbers[1::2]
+    return numbers[1::2]
 
 
 if __name__ == '__main__':

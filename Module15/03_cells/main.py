@@ -2,12 +2,11 @@
 def generate_cells(cell_count) -> list:
     if not isinstance(cell_count, int):
         raise ValueError('Требуется целое число!')
-    # TODO есть такая переменная в глобальном скоупе
-    result = []
+    cells = []
     for index in range(cell_count):
         value_input = int(input(f'Эффективность {index+1} клетки: '))
-        result.append(value_input)
-    return result
+        cells.append(value_input)
+    return cells
 
 
 def filter_cells(cells) -> list:

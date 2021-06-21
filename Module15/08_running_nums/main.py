@@ -5,10 +5,8 @@ def shift_table(table, shift) -> None:
 
 
 if __name__ == '__main__':
-    n = [1, 4, -3, 0, 10]
-    k = 5
-    print(f'Изначальный список: {n}')
-    shift_table(n, k)
-    print(f'Сдвинутый список: {n}')
-
-# TODO однобуквенных переменных быть не должно
+    numbers = [1, 4, -3, 0, 10]
+    shift_value = 5
+    print(f'Изначальный список: {numbers}')
+    shift_table(numbers, shift_value)
+    print(f'Сдвинутый список: {numbers}')
