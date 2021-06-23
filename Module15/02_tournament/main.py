@@ -9,3 +9,5 @@ if __name__ == '__main__':
     ]
     result = generate_even_names(name_input)
     print(result)
+
+# зачет!

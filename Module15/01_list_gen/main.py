@@ -18,3 +18,5 @@ if __name__ == '__main__':
     print(f'Список нечетных чисел: {generated_numbers}')
     generated_numbers = generate_odds_numbers_second_version(number_input)
     print(f'Список нечетных чисел: {generated_numbers}')
+
+# зачет!

@@ -21,3 +21,5 @@ if __name__ == '__main__':
     filtered_cells = filter_cells(generated_cells)
     result = ' '.join([str(item) for item in filtered_cells])
     print(f'Неподходящие значения: {result}')
+
+# зачет!

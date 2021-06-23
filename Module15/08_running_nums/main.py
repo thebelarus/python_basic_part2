@@ -10,3 +10,5 @@ if __name__ == '__main__':
     print(f'Изначальный список: {numbers}')
     shift_table(numbers, shift_value)
     print(f'Сдвинутый список: {numbers}')
+
+# зачет!
