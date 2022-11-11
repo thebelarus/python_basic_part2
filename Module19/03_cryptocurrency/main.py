@@ -45,4 +45,19 @@ data = {
 }
 
 
-# TODO здесь писать код
+def get_keys_of_dict(data_dict):
+    return [key for key in data_dict.keys()]
+
+
+def get_values_of_dict(data_dict):
+    return [value for value in data_dict.values()]
+
+
+data_keys = get_keys_of_dict(data)
+data_values = get_values_of_dict(data)
+data['ETH']['total_diff'] = 100
+data['tokens'][0]['fst_token_info']['name'] = 'doge'
+total_out = data['tokens'][0].pop('total_out')
+data['ETH']['total_out'] = total_out
+price = data['tokens'][1]['sec_token_info'].pop('price')
+data['tokens'][1]['sec_token_info']['total_price'] = price
