@@ -24,4 +24,19 @@ store = {
     ],
 }
 
-# TODO здесь писать код
+
+if __name__ == '__main__':
+    for good_name, good_value in goods.items():
+        price = sum(
+            [
+                item['price']*item['quantity']
+                for item in store[good_value]
+            ]
+        )
+        quantity = sum(
+            [
+                item['quantity']
+                for item in store[good_value]
+            ]
+        )
+        print(f'{good_name} — {quantity} штук, стоимость {price} рубля')
