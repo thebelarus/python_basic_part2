@@ -20,25 +20,27 @@ students = {
 }
 
 
-def f(dict):
-    lst = []
-    string = ''
-    for i in dict:
-        lst += (dict[i]['interests'])
-        string += dict[i]['surname']
-    cnt = 0
-    for s in string:
-        cnt += 1
-    return lst, cnt
+def get_id_age_pairs(base):
+    return [(key, value['age']) for key, value in base.items()]
 
 
-pairs = []
-for i in students:
-    pairs += (i, students[i]['age'])
+def get_all_students_interests(base):
+    return [interest for item in students.values()
+            for interest in item['interests']]
 
 
-my_lst = f(students)[0]
-l = f(students)[1]
-print(my_lst, l)
+def get_all_last_names_length(base):
+    return sum([len(item['surname']) for item in base.values()])
 
-# TODO исправить код
+
+def main():
+    id_age_pairs = get_id_age_pairs(students)
+    all_students_interests = get_all_students_interests(students)
+    all_last_name_length = get_all_last_names_length(students)
+    print(f'Список пар "ID студента — возраст": {id_age_pairs}')
+    print(f'Полный список интересов всех студентов: {all_students_interests}')
+    print(f'Общая длина всех фамилий студентов: {all_last_name_length}')
+
+
+if __name__ == '__main__':
+    main()
