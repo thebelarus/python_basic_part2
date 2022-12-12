@@ -5,6 +5,9 @@ from typing import Any, Callable
 
 
 def slowly(function: Callable) -> Any:
+    '''Декоратор, который перед выполнением декорируемой 
+    функции ждёт несколько секунд.
+    '''
     @wraps(function)
     def wrapper(*args, **kwargs):
         random_number = random.randint(2, 5)

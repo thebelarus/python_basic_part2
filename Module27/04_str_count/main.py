@@ -4,6 +4,7 @@ from typing import Any, Callable
 
 
 def counter(function: Callable) -> Any:
+    '''Декоратор, считающий и выводящий количество вызовов декорируемой функции.'''
     function_base = {}
 
     @wraps(function)
