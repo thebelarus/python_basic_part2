@@ -4,6 +4,11 @@ from typing import Any, Callable
 
 
 def logging(function: Callable) -> Any:
+    '''Декоратор для логирования функций. 
+    На экран выводится название функции и её документация. 
+    Если во время выполнения декорируемой функции возникла 
+    ошибка, то в файл `function_errors.log` записываются названия функции и ошибки.
+    '''
     @wraps(function)
     def wrapper(*args, **kwargs) -> Any:
         print('Имя функции: ', function.__name__)

@@ -3,9 +3,14 @@ from typing import Any, Callable
 
 
 def how_are_you(function: Callable) -> Any:
+    '''Декоратор, при вызове декорируемой функции спрашивает
+    у пользователя «Как дела?», вне зависимости от ответа
+    отвечает что-то вроде «А у меня не очень!» и
+    только потом запускает саму функцию
+    '''
     @wraps(function)
     def wrapper(*args, **kwargs):
-        input('Как дела? ')
+        _ = input('Как дела? ')
         print('А у меня не очень! Ладно, держи свою функцию.')
         return function(*args, **kwargs)
     return wrapper
